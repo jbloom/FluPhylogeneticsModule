@@ -50,18 +50,16 @@
 <p>These slides are for the high-school level class, and were created by <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a>, <a class="reference external" href="http://bedford.io/blog/">Trevor Bedford</a>, and <a class="reference external" href="http://www.sw.wednet.edu/page/581">Greg Ballog</a>.</p>
 
 </article>
-<article class="slide level-2" id="studying-a-virus-outbreak">
-<h2>Studying a virus outbreak</h2>
-<p>This lecture and homework will have you perform a simpler version of the studies that scientists performed to understand a virus outbreak that occurred in early 2009.</p>
-<p>After you complete the lecture and homework, you can read about the similar but more complex analyses that scientists actually performed to study this virus outbreak by looking at <a class="reference external" href="http://www.nature.com/nature/journal/v459/n7250/full/nature08182.html">this paper</a> and <a class="reference external" href="http://tree.bio.ed.ac.uk/groups/influenza/">this website</a>.</p>
-
-</article>
 <article class="slide level-2" id="a-new-flu-virus-appears-in-the-u-s">
 <h2>A new flu virus appears in the U.S.</h2>
 <p>On April 15, 2009, doctors in California detect a new strain of influenza in a 10-year old child. A few days later, a similar virus is found in another child in California.</p>
+
+</article>
+<article class="slide level-2" id="id1">
+<h2>A new flu virus appears in the U.S.</h2>
 <p>A week later, the <a class="reference external" href="http://www.cdc.gov/">Centers for Disease Control (CDC)</a> publishes an <a class="reference external" href="http://www.cdc.gov/mmwr/preview/mmwrhtml/mm5815a5.htm">article in Morbidity and Mortality Weekly Report</a> describing these infections:</p>
 <blockquote>
-<div><em>On April 17, 2009, CDC determined that two cases of febrile respiratory illness occurring in children who resided in adjacent counties in southern California were caused by infection with a swine influenza A (H1N1) virus. The viruses from the two cases are closely related genetically... and contain a unique combination of gene segments that previously has not been reported among swine or human influenza viruses in the United States or elsewhere.</em></div></blockquote>
+<div><em>On April 17, 2009, CDC determined that two cases of febrile respiratory illness occurring in children who resided in adjacent counties in southern California were caused by infection with a swine influenza A (H1N1) virus. The viruses from the two cases are closely related genetically... and contain a unique combination of gene segments that previously has not been reported among swine or human influenza viruses in the United States or elsewhere. Neither child had contact with pigs; the source of the infection is unknown.</em></div></blockquote>
 
 </article>
 <article class="slide level-2" id="the-virus-spreads-in-the-u-s">
@@ -89,13 +87,37 @@ this  <a class="reference external" href="http://www.nytimes.com/2009/06/12/worl
 <img alt="_images/2014-06-12_NYTimes.png" src="_images/2014-06-12_NYTimes.png" />
 
 </article>
+<article class="slide level-2" id="your-goal">
+<h2>Your goal</h2>
+<p>You will use techniques from <a class="reference external" href="http://en.wikipedia.org/wiki/Computational_biology">computational biology</a> to address two questions that scientists needed to answer when faced with this infection:</p>
+<ol class="arabic simple">
+<li>Is the virus resistant to the drug <a class="reference external" href="http://en.wikipedia.org/wiki/Oseltamivir">Tamiflu</a>?</li>
+<li>Where did the virus come from?</li>
+</ol>
+
+</article>
+<article class="slide level-2" id="some-background-on-flu-pandemics">
+<h2>Some background on flu pandemics</h2>
+<p>&quot;Flu&quot; is the common name for <a class="reference external" href="http://en.wikipedia.org/wiki/Influenza">influenza</a>, which is a virus that infects many species including birds, pigs, horses, humans, and dogs.</p>
+<p>Watch <a class="reference external" href="http://www.niaid.nih.gov/topics/Flu/understandingFlu/Pages/pandemicVideo.aspx">this video</a> for some background on influenza <a class="reference external" href="http://en.wikipedia.org/wiki/Pandemic">pandemics</a>.</p>
+
+</article>
+<article class="slide level-2" id="back-to-your-goal">
+<h2>Back to your goal</h2>
+<p>You will use techniques from <a class="reference external" href="http://en.wikipedia.org/wiki/Computational_biology">computational biology</a> to address two questions that scientists needed to answer when faced with this infection:</p>
+<ol class="arabic simple">
+<li>Is the virus resistant to the drug <a class="reference external" href="http://en.wikipedia.org/wiki/Oseltamivir">Tamiflu</a>?</li>
+<li>Where did the virus come from?</li>
+</ol>
+
+</article>
 <article class="slide level-2" id="is-the-virus-resistant-to-tamiflu">
 <h2>Is the virus resistant to Tamiflu?</h2>
 <p>One of the first questions scientists asked was whether the virus was resistant to <a class="reference external" href="http://en.wikipedia.org/wiki/Oseltamivir">Tamiflu (also known by the chemical name oseltamivir)</a>, which is the most commonly used drug against influenza.</p>
 <img alt="_images/Tamiflu.JPG" src="_images/Tamiflu.JPG" />
 
 </article>
-<article class="slide level-2" id="id4">
+<article class="slide level-2" id="id7">
 <h2>Is the virus resistant to Tamiflu?</h2>
 <p><a class="reference external" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2671453/">Earlier studies</a> had shown that influenza of this type was resistant if it had a mutation of from His to Tyr at position 275 of the virus's neuraminidase protein (this mutation is called <em>His275Tyr</em>).</p>
 <p>So did the new 2009 pandemic virus have the <em>His275Tyr</em> mutation? To answer this question, we need to learn a little bit about influenza's genes.</p>
@@ -110,7 +132,7 @@ this  <a class="reference external" href="http://www.nytimes.com/2009/06/12/worl
 <p>Using this knowledge, we will look at the neuraminidase gene for the strain A/California/07/2009 to see if it contains the Tamiflu-resistance mutation <em>His275Tyr</em>.</p>
 
 </article>
-<article class="slide level-2" id="id5">
+<article class="slide level-2" id="id8">
 <h2>Is the virus resistant to Tamiflu?</h2>
 <p>Use the portion of the sequence below for neuraminidase to see whether <a class="reference external" href="http://www.ncbi.nlm.nih.gov/nuccore/507593927">virus A/California/07/2009</a> has <em>His275</em> (Tamiflu will work) or the resistance mutation <em>His275Tyr</em> (Tamiflu will not work). To go from viral RNA to mRNA, using the base-pair rules (<em>A - U</em> and <em>C - G</em>). To go from mRNA to protein, use the <a class="reference external" href="http://en.wikipedia.org/wiki/Genetic_code#RNA_codon_table">genetic code</a>:</p>
 <div class="highlight-python"><div class="highlight"><pre>viral RNA: 3&#39;-...  cgg gga uua aua gug aua cuc cuu acg agg ...-5&#39;
@@ -120,6 +142,122 @@ number:       ...  271 272 273 274 275 276 277 278 279 280 ...
 </pre></div>
 </div>
 <p><strong>Exercise 1: Is this virus resistant to Tamiflu? If yes, what is a single-nucleotide mutation that would make it non-resistant? If no, what is a single-nucleotide mutation that would make it resistant?</strong></p>
+
+</article>
+<article class="slide level-2" id="where-did-the-virus-come-from">
+<h2>Where did the virus come from?</h2>
+<p>To answer this question, we will use <a class="reference external" href="http://en.wikipedia.org/wiki/Phylogenetics">phylogenetics</a>.</p>
+<p>A <a class="reference external" href="http://en.wikipedia.org/wiki/Phylogenetic_tree">phylogenetic tree</a> represents evolutionary histories.</p>
+
+</article>
+<article class="slide level-2" id="phylogenetic-trees">
+<h2>Phylogenetic trees</h2>
+<p>Geneology of the royal family.</p>
+<img alt="_images/royalty_tree.png" src="_images/royalty_tree.png" />
+
+</article>
+<article class="slide level-2" id="id9">
+<h2>Phylogenetic trees</h2>
+<p><a class="reference external" href="http://en.wikipedia.org/wiki/Tree_of_life_(biology)#Haeckel.27s_Tree_of_Life">Haeckel's tree of life</a> (1879).</p>
+<a class="reference internal image-reference" href="_images/Haeckel_tree.jpg"><img alt="_images/Haeckel_tree.jpg" src="_images/Haeckel_tree.jpg" style="width: 58%;" /></a>
+
+</article>
+<article class="slide level-2" id="id10">
+<h2>Phylogenetic trees</h2>
+<p>Tree of <a class="reference external" href="http://en.wikipedia.org/wiki/Eutheria">eutherian mammals</a> from <a class="reference external" href="http://openi.nlm.nih.gov/detailedresult.php?img=3198400_pone.0026436.g004&amp;req=4">this paper</a>.</p>
+<a class="reference internal image-reference" href="_images/eutherian_tree.png"><img alt="_images/eutherian_tree.png" src="_images/eutherian_tree.png" style="width: 47%;" /></a>
+
+</article>
+<article class="slide level-2" id="id11">
+<h2>Phylogenetic trees</h2>
+<p>Tree of influenza viruses taken from <a class="reference external" href="http://jbloom.github.io/phyloExpCM/example_2014Analysis_Influenza_H1_HA.html">here</a>.</p>
+<a class="reference internal image-reference" href="_images/influenza_tree.jpg"><img alt="_images/influenza_tree.jpg" src="_images/influenza_tree.jpg" style="width: 120%;" /></a>
+
+</article>
+<article class="slide level-2" id="using-phylogenetics-to-determine-the-origin-of-the-2009-pandemic">
+<h2>Using phylogenetics to determine the origin of the 2009 pandemic</h2>
+<p>You will build a phylogenetic tree to determine the origins of the 2009 pandemic virus.</p>
+<p>You will do this using the <a class="reference external" href="http://www.fludb.org/">Influenza Research Database</a>.</p>
+
+</article>
+<article class="slide level-2" id="register-with-the-influenza-research-database">
+<h2>Register with the Influenza Research Database</h2>
+<ol class="arabic simple">
+<li>Go to the webpage for the <a class="reference external" href="http://www.fludb.org/">Influenza Research Database</a>.</li>
+<li>Click on the button on the upper right that says <tt class="docutils literal"><span class="pre">Sign</span> <span class="pre">Up!</span></tt> to create an account (or if you already created an account, click <tt class="docutils literal"><span class="pre">Sign</span> <span class="pre">In</span></tt>).</li>
+<li>You are now officially registered with the <a class="reference external" href="http://www.fludb.org/">Influenza Research Database</a>!</li>
+</ol>
+
+</article>
+<article class="slide level-2" id="assemble-a-set-of-virus-sequences">
+<h2>Assemble a set of virus sequences</h2>
+<ol class="arabic">
+<li><p class="first">After signing in, go to the homepage of the <a class="reference external" href="http://www.fludb.org/">Influenza Research Database</a>.</p>
+</li>
+<li><p class="first">Click on the option under <tt class="docutils literal"><span class="pre">Search</span></tt> that says <tt class="docutils literal"><span class="pre">Sequences</span> <span class="pre">&amp;</span> <span class="pre">Strains</span></tt>.</p>
+</li>
+<li><p class="first">Click on the <tt class="docutils literal"><span class="pre">ADVANCED</span> <span class="pre">OPTIONS</span></tt> button at lower left.</p>
+</li>
+<li><p class="first">Select the option that says <tt class="docutils literal"><span class="pre">Keyword</span> <span class="pre">search</span></tt>.</p>
+</li>
+<li><p class="first">In the box on the right that says <tt class="docutils literal"><span class="pre">in</span> <span class="pre">All</span></tt>, change this to <tt class="docutils literal"><span class="pre">in</span> <span class="pre">Unique</span> <span class="pre">Sample</span> <span class="pre">Identifier</span></tt>.</p>
+</li>
+<li><p class="first">Enter the following list identifiers (separated by commas) in the empty white search box:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">FJ966082</span><span class="p">,</span> <span class="n">CY121680</span><span class="p">,</span> <span class="n">EU604689</span><span class="p">,</span> <span class="n">CY022477</span><span class="p">,</span> <span class="n">CY022333</span><span class="p">,</span> <span class="n">CY036799</span><span class="p">,</span>
+<span class="n">CY026283</span><span class="p">,</span> <span class="n">FJ986620</span><span class="p">,</span> <span class="n">CY021725</span><span class="p">,</span> <span class="n">AB671289</span><span class="p">,</span> <span class="n">CY014968</span><span class="p">,</span> <span class="n">EU735802</span>
+</pre></div>
+</div>
+</li>
+</ol>
+
+</article>
+<article class="slide level-2" id="saving-your-sequence-set">
+<h2>Saving your sequence set</h2>
+<ol class="arabic simple">
+<li>You should now have a set of sequences that like this:</li>
+</ol>
+<a class="reference internal image-reference" href="_images/SequenceSet.png"><img alt="_images/SequenceSet.png" class="align-right" src="_images/SequenceSet.png" style="width: 90%;" /></a>
+<ol class="arabic simple" start="2">
+<li>Click on <tt class="docutils literal"><span class="pre">Select</span> <span class="pre">all</span> <span class="pre">12</span> <span class="pre">segments</span></tt>, and then click <tt class="docutils literal"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Working</span> <span class="pre">Set</span></tt> and save them as <tt class="docutils literal"><span class="pre">flu</span> <span class="pre">sequences</span></tt>. You have now saved the sequences on your workbench.</li>
+</ol>
+
+</article>
+<article class="slide level-2" id="examining-your-sequence-set">
+<h2>Examining your sequence set</h2>
+<ol class="arabic">
+<li><p class="first">Click on the <tt class="docutils literal"><span class="pre">Workbench</span></tt> button at the top of the <a class="reference external" href="http://www.fludb.org/">Influenza Research Database</a>.</p>
+</li>
+<li><p class="first">On the list of analyses, click on <tt class="docutils literal"><span class="pre">View</span></tt> next to the <tt class="docutils literal"><span class="pre">flu</span> <span class="pre">sequences</span></tt> sequence set that you saved.</p>
+</li>
+<li><p class="first">Look at the names. Flu sequences from humans are named like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>A/Location/Number/Date (such as A/California/04/2009)
+</pre></div>
+</div>
+<p>while sequences from other species are named like this:</p>
+<div class="highlight-python"><div class="highlight"><pre>A/Species/Location/Number/Date (such as A/swine/Iowa/17672/1988)
+</pre></div>
+</div>
+</li>
+</ol>
+
+</article>
+<article class="slide level-2" id="id16">
+<h2>Examining your sequence set</h2>
+<p>We will now look at the composition of the sequence set that you have saved.</p>
+<p><strong>Exercise 2: How many of the sequences come from humans? How many from pigs? How many from birds? What is the date of the earliest sequence?</strong></p>
+
+</article>
+<article class="slide level-2" id="building-a-phylogenetic-tree">
+<h2>Building a phylogenetic tree</h2>
+<p>In your sequence set, there are two sequences from the 2009 outbreak in California. These sequences are <tt class="docutils literal"><span class="pre">A/California/04/2009</span></tt> and <tt class="docutils literal"><span class="pre">A/California/07/2009</span></tt>.</p>
+<p>The rest of the sequences are from pigs, from birds, or from another earlier strain of flu that was already infecting humans.</p>
+<p><strong>Exercise 3: Based on the news articles we discussed earlier, make a hypothesis about the phylogenetic tree. To which sequence(s) do you think the 2009 sequences from California will be most closely related?</strong></p>
+
+</article>
+<article class="slide level-2" id="more-details">
+<h2>More details</h2>
+<p>The exercises that you have just performed are a simpler version of the studies that scientists actually performed to understand the 2009 swine-origin H1N1 influenza pandemic.</p>
+<p>If you are interested, you can read about the similar but more complex analyses that scientists actually performed to study this virus outbreak by looking at <a class="reference external" href="http://www.nature.com/nature/journal/v459/n7250/full/nature08182.html">this paper</a> and <a class="reference external" href="http://tree.bio.ed.ac.uk/groups/influenza/">this website</a>.</p>
 
 </article>
 
