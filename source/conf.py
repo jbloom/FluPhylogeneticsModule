@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Genome Sciences 541 documentation build configuration file, created by
+# FluPhylogeneticsModule documentation build configuration file, created by
 # sphinx-quickstart on Thu Apr 17 22:19:06 2014.
 #
 # This file is execfile()d with the current directory set to its
@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Genome Sciences 541'
+project = u'FluPhylogeneticsModule'
 copyright = u'2014, Jesse Bloom'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -186,7 +186,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'GenomeSciences541doc'
+htmlhelp_basename = 'FluPhylogeneticsModule'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -206,7 +206,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'GenomeSciences541.tex', u'Genome Sciences 541 Documentation',
+  ('index', 'FluPhylogeneticsModule.tex', u'FluPhylogeneticsModule Documentation',
    u'Jesse Bloom', 'manual'),
 ]
 
@@ -236,7 +236,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'genomesciences541', u'Genome Sciences 541 Documentation',
+    ('index', 'genomesciences541', u'FluPhylogeneticsModule Documentation',
      [u'Jesse Bloom'], 1)
 ]
 
@@ -250,8 +250,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'GenomeSciences541', u'Genome Sciences 541 Documentation',
-   u'Jesse Bloom', 'GenomeSciences541', 'One line description of project.',
+  ('index', 'FluPhylogeneticsModule', u'FluPhylogeneticsModule Documentation',
+   u'Jesse Bloom', 'FluPhylogeneticsModule', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -274,7 +274,7 @@ extensions += [
     'hieroglyph',
 ]
 
-slide_theme = 'slides'
+slide_theme = 'single-level'
 slide_levels = 3
 
 # Place custom static assets in the _static directory and uncomment

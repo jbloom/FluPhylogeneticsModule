@@ -5,11 +5,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Usingg phylogenetics to understand a pandemic of the flu virus &mdash; Genome Sciences 541 2014.04.17 documentation</title>
+    <title>Using phylogenetics to understand a virus pandemic &mdash; FluPhylogeneticsModule 2014.04.17 documentation</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/styles.css" type="text/css" />
-    <link rel="stylesheet" href="_static/slides.css" type="text/css" />
+    <link rel="stylesheet" href="_static/single.css" type="text/css" />
     
 
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -33,7 +33,7 @@
     <script type="text/javascript" src="_static/controller.js"></script>
     <script type="text/javascript" src="_static/init.js"></script>
     
-    <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="index.html" />
+    <link rel="top" title="FluPhylogeneticsModule 2014.04.17 documentation" href="index.html" />
     <link rel="prev" title="FluPhylogeneticsModule" href="index.html" /> 
   </head>
   <body>
@@ -43,12 +43,83 @@
    class='slides layout-regular'>
 
 
-  <article class="slide level-1" id="usingg-phylogenetics-to-understand-a-pandemic-of-the-flu-virus">
-<h1>Usingg phylogenetics to understand a pandemic of the flu virus</h1>
+  <article class="slide level-1" id="using-phylogenetics-to-understand-a-virus-pandemic">
+<h1>Using phylogenetics to understand a virus pandemic</h1>
+<p>These slides are available at <a class="reference external" href="http://jbloom.github.io/FluPhylogeneticsModule/slides.html">http://jbloom.github.io/FluPhylogeneticsModule/slides.html</a></p>
+<p>Advance through the slides using the arrow keys.</p>
+<p>These slides are for the high-school level class, and were created by <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a>, <a class="reference external" href="http://bedford.io/blog/">Trevor Bedford</a>, and <a class="reference external" href="http://www.sw.wednet.edu/page/581">Greg Ballog</a>.</p>
 
 </article>
-<article class="slide level-2" id="slide-1">
-<h2>Slide 1</h2>
+<article class="slide level-2" id="studying-a-virus-outbreak">
+<h2>Studying a virus outbreak</h2>
+<p>This lecture and homework will have you perform a simpler version of the studies that scientists performed to understand a virus outbreak that occurred in early 2009.</p>
+<p>After you complete the lecture and homework, you can read about the similar but more complex analyses that scientists actually performed to study this virus outbreak by looking at <a class="reference external" href="http://www.nature.com/nature/journal/v459/n7250/full/nature08182.html">this paper</a> and <a class="reference external" href="http://tree.bio.ed.ac.uk/groups/influenza/">this website</a>.</p>
+
+</article>
+<article class="slide level-2" id="a-new-flu-virus-appears-in-the-u-s">
+<h2>A new flu virus appears in the U.S.</h2>
+<p>On April 15, 2009, doctors in California detect a new strain of influenza in a 10-year old child. A few days later, a similar virus is found in another child in California.</p>
+<p>A week later, the <a class="reference external" href="http://www.cdc.gov/">Centers for Disease Control (CDC)</a> publishes an <a class="reference external" href="http://www.cdc.gov/mmwr/preview/mmwrhtml/mm5815a5.htm">article in Morbidity and Mortality Weekly Report</a> describing these infections:</p>
+<blockquote>
+<div><em>On April 17, 2009, CDC determined that two cases of febrile respiratory illness occurring in children who resided in adjacent counties in southern California were caused by infection with a swine influenza A (H1N1) virus. The viruses from the two cases are closely related genetically... and contain a unique combination of gene segments that previously has not been reported among swine or human influenza viruses in the United States or elsewhere.</em></div></blockquote>
+
+</article>
+<article class="slide level-2" id="the-virus-spreads-in-the-u-s">
+<h2>The virus spreads in the U.S.</h2>
+<p>On April 23, 2009, it is discovered that the virus has also infected people in Texas, as described in this <a class="reference external" href="http://www.nytimes.com/2009/04/24/us/24flu.html">New York Times article</a>.</p>
+<img alt="_images/2014-04-24_NYTimes.png" src="_images/2014-04-24_NYTimes.png" />
+
+</article>
+<article class="slide level-2" id="the-virus-is-also-in-mexico">
+<h2>The virus is also in Mexico</h2>
+<p>It quickly becomes apparent that the virus is already circulating fairly extensively in Mexico, as described in this <a class="reference external" href="http://www.nytimes.com/2009/04/25/world/americas/25mexico.html">New York Times article</a>.</p>
+<img alt="_images/2014-04-25_NYTimes.png" src="_images/2014-04-25_NYTimes.png" />
+
+</article>
+<article class="slide level-2" id="the-u-s-declares-a-public-health-emergency">
+<h2>The U.S. declares a public health emergency</h2>
+<p>A few days later, the U.S. declares a health emergency, as described in this <a class="reference external" href="http://www.nytimes.com/2009/04/27/world/27flu.html">New York Times article</a>.</p>
+<img alt="_images/2014-04-27_NYTimes.png" src="_images/2014-04-27_NYTimes.png" />
+
+</article>
+<article class="slide level-2" id="the-world-health-organization-who-declares-a-pandemic">
+<h2>The World Health Organization (WHO) declares a pandemic</h2>
+<p>Within six weeks, the virus has spread to at least 74 countries. The <a class="reference external" href="http://www.who.int/mediacentre/news/statements/2009/h1n1_pandemic_phase6_20090611/en/">WHO issues a declaration</a>  that the virus is a <a class="reference external" href="http://en.wikipedia.org/wiki/Pandemic">pandemic</a>, as reported in
+this  <a class="reference external" href="http://www.nytimes.com/2009/06/12/world/asia/12flu.html">New York Times article</a>.</p>
+<img alt="_images/2014-06-12_NYTimes.png" src="_images/2014-06-12_NYTimes.png" />
+
+</article>
+<article class="slide level-2" id="is-the-virus-resistant-to-tamiflu">
+<h2>Is the virus resistant to Tamiflu?</h2>
+<p>One of the first questions scientists asked was whether the virus was resistant to <a class="reference external" href="http://en.wikipedia.org/wiki/Oseltamivir">Tamiflu (also known by the chemical name oseltamivir)</a>, which is the most commonly used drug against influenza.</p>
+<img alt="_images/Tamiflu.JPG" src="_images/Tamiflu.JPG" />
+
+</article>
+<article class="slide level-2" id="id4">
+<h2>Is the virus resistant to Tamiflu?</h2>
+<p><a class="reference external" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2671453/">Earlier studies</a> had shown that influenza of this type was resistant if it had a mutation of from His to Tyr at position 275 of the virus's neuraminidase protein (this mutation is called <em>His275Tyr</em>).</p>
+<p>So did the new 2009 pandemic virus have the <em>His275Tyr</em> mutation? To answer this question, we need to learn a little bit about influenza's genes.</p>
+
+</article>
+<article class="slide level-2" id="background-on-influenza-s-genes">
+<h2>Background on influenza's genes</h2>
+<p>Influenza is an <a class="reference external" href="http://en.wikipedia.org/wiki/RNA_virus">RNA virus</a> that encodes its genes in the <a class="reference external" href="http://en.wikipedia.org/wiki/Sense_(molecular_biology)#Negative-sense">negative sense</a>. This means that its genes are made of RNA (rather than the DNA used to make our genes) that needs to be copied into mRNA (positive sense) before it can be translated into protein:</p>
+<div class="highlight-python"><div class="highlight"><pre>viral RNA -&gt; mRNA -&gt; protein
+</pre></div>
+</div>
+<p>Using this knowledge, we will look at the neuraminidase gene for the strain A/California/07/2009 to see if it contains the Tamiflu-resistance mutation <em>His275Tyr</em>.</p>
+
+</article>
+<article class="slide level-2" id="id5">
+<h2>Is the virus resistant to Tamiflu?</h2>
+<p>Use the portion of the sequence below for neuraminidase to see whether <a class="reference external" href="http://www.ncbi.nlm.nih.gov/nuccore/507593927">virus A/California/07/2009</a> has <em>His275</em> (Tamiflu will work) or the resistance mutation <em>His275Tyr</em> (Tamiflu will not work). To go from viral RNA to mRNA, using the base-pair rules (<em>A - U</em> and <em>C - G</em>). To go from mRNA to protein, use the <a class="reference external" href="http://en.wikipedia.org/wiki/Genetic_code#RNA_codon_table">genetic code</a>:</p>
+<div class="highlight-python"><div class="highlight"><pre>viral RNA: 3&#39;-...  cgg gga uua aua gug aua cuc cuu acg agg ...-5&#39;
+mRNA:      5&#39;-...  gcc ccu ??? ??? ??? ??? ??? ??? ??? ??? ...-3&#39;
+protein:      ...  Ala ??? ??? ??? ??? ??? ??? ??? ??? ??? ...
+number:       ...  271 272 273 274 275 276 277 278 279 280 ...
+</pre></div>
+</div>
+<p><strong>Exercise 1: Is this virus resistant to Tamiflu? If yes, what is a single-nucleotide mutation that would make it non-resistant? If no, what is a single-nucleotide mutation that would make it resistant?</strong></p>
 
 </article>
 
