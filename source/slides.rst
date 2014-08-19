@@ -204,9 +204,23 @@ The rest of the sequences are from pigs, from birds, or from another earlier str
 
 **Exercise 3: Based on the news articles we discussed earlier, make a hypothesis about the phylogenetic tree. To which sequence(s) do you think the 2009 sequences from California will be most closely related?**
 
+
+Building a phylogenetic tree
+================================
+1) To actually build the phylogenetic tree, click on the ``Select all 12 segments`` box after viewing the sequence set on your ``Workbench``.
+
+2) Click the ``Run Analysis`` button at the bottom right of the page, and select ``Generate Phylogenetic Tree``. When asked for the sequence type, click ``Nucleic Acid (NA)``.
+
+3) Specify an ``Analysis Name`` of ``mytree`` and then click the ``Build Tree`` button at the bottom of the page to build the tree with the default options.
+
+Examining your phylogenetic tree
+==========================================
+To look at your phylogenetic tree, click the ``View Tree`` button at the bottom of the page. 
+
+**Note: This is where I ran into problems. I could not manage to get the tree visualization working with my web browsers. Do you have suggestions of a better way to visualize the tree?**
     
-More details
-============================
+If you're interested in learning more...
+==========================================
 The exercises that you have just performed are a simpler version of the studies that scientists actually performed to understand the 2009 swine-origin H1N1 influenza pandemic.
 
 If you are interested, you can read about the similar but more complex analyses that scientists actually performed to study this virus outbreak by looking at `this paper <http://www.nature.com/nature/journal/v459/n7250/full/nature08182.html>`_ and `this website <http://tree.bio.ed.ac.uk/groups/influenza/>`_.
