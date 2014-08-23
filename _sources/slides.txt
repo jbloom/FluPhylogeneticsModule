@@ -6,7 +6,7 @@ These slides are available at http://jbloom.github.io/FluPhylogeneticsModule/sli
 
 Advance through the slides using the arrow keys.
 
-These slides are for the high-school level class, and were created by `Jesse Bloom`_, `Trevor Bedford`_, and `Greg Ballog`_.
+These slides are for a high-school level class, and were created by `Greg Ballog`_, `Jesse Bloom`_, and `Trevor Bedford`_.
 
 
 A new flu virus appears in the U.S.
