@@ -164,7 +164,7 @@ Assemble a set of virus sequences
 6) Enter the following list identifiers (separated by commas) in the empty white search box::
     
     FJ966082, CY121680, EU604689, CY022477, CY022333, CY036799, 
-    CY026283, FJ986620, CY021725, AB671289, CY014968, EU735802    
+    CY026283, CY021725, AB671289, CY014968, EU735802    
 
 Saving your sequence set
 =================================
@@ -174,13 +174,13 @@ Saving your sequence set
    :align: right
    :width: 90%
 
-2) Click on ``Select all 12 segments``, and then click ``Add to Working Set`` and save them as ``flu sequences``. You have now saved the sequences on your workbench.
+2) Click on ``Select all 11 segments``, and then click ``Add to Working Set`` and save them as *flu sequences*. You have now saved the sequences on your workbench.
 
 Examining your sequence set
 ================================
 1) Click on the ``Workbench`` button at the top of the `Influenza Research Database <http://www.fludb.org/>`_.
 
-2) On the list of analyses, click on ``View`` next to the ``flu sequences`` sequence set that you saved.
+2) On the list of analyses, click on ``View`` next to the *flu sequences* sequence set that you saved.
 
 3) Look at the names. Flu sequences from humans are named like this::
 
@@ -190,14 +190,22 @@ Examining your sequence set
        
     A/Species/Location/Number/Date (such as A/swine/Iowa/17672/1988)
 
-Examining your sequence set
+Examine your sequence set
 ================================
 We will now look at the composition of the sequence set that you have saved.
 
 **Exercise 2: How many of the sequences come from humans? How many from pigs? How many from birds? What is the date of the earliest sequence?**
 
-Building a phylogenetic tree
-================================
+Download your sequences
+==========================
+Click to ``Select all 11 segments``. Then click on the ``Download`` button near the top of the page to download the sequence set. Select the ``Gene FASTA`` format. Then click on the option to custom format the the ``Definition Line`` and add **only** *Strain Name* (this ensure the sequences are named by strain). Then click ``Download`` and save the file ``GeneFastaResults.fasta``.
+
+This downloaded file has all of the sequences along with the strain name in `FASTA format <http://en.wikipedia.org/wiki/FASTA_format>`_.
+
+**Shortcut:** If you have problems with these steps, you can Download the file by :download:`clicking here <GeneFastaResults.fasta>`.
+
+Hypothesize about the phylogenetic tree
+===========================================
 In your sequence set, there are two sequences from the 2009 outbreak in California. These sequences are ``A/California/04/2009`` and ``A/California/07/2009``.
 
 The rest of the sequences are from pigs, from birds, or from another earlier strain of flu that was already infecting humans.
@@ -205,25 +213,41 @@ The rest of the sequences are from pigs, from birds, or from another earlier str
 **Exercise 3: Based on the news articles we discussed earlier, make a hypothesis about the phylogenetic tree. To which sequence(s) do you think the 2009 sequences from California will be most closely related?**
 
 
-Building a phylogenetic tree
+Build the phylogenetic tree
 ================================
-1) To actually build the phylogenetic tree, click on the ``Select all 12 segments`` box after viewing the sequence set on your ``Workbench``.
+1) Go to the `ClustalW webpage <http://www.ebi.ac.uk/Tools/msa/clustalw2/>`_.
 
-2) Click the ``Run Analysis`` button at the bottom right of the page, and select ``Generate Phylogenetic Tree``. When asked for the sequence type, click ``Nucleic Acid (NA)``.
+2) At ``STEP 1``, click the option that says ``Choose File`` and upload the sequence set ``GeneFastaResults.fasta`` that you downloaded from the `Influenza Research Database <http://www.fludb.org/>`_.
 
-3) Specify an ``Analysis Name`` of ``mytree`` and then click the ``Build Tree`` button at the bottom of the page to build the tree with the default options.
+3) We are using gene sequences, so where it says ``a set of Protein sequences`` change ``Protein`` to ``DNA``.
 
-Examining your phylogenetic tree
-==========================================
-To look at your phylogenetic tree, click the ``View Tree`` button at the bottom of the page. 
+4) Then click the ``Submit`` button at the bottom of the page. Wait for the analysis to finish. You may have to hit ``Reload`` on your web browser after waiting a few minutes.
 
-**Note: This is where I ran into problems. I could not manage to get the tree visualization working with my web browsers. Do you have suggestions of a better way to visualize the tree?**
+Visualizing your tree
+=======================
+1) Once you get the results page, click the option for ``Phylogenetic Tree`` at the top of the page.
+
+2) Scroll to the bottom of the page to look at the tree.
+
+3) After looking at this tree, answer the questions on the next page.
+
+Examining the tree
+=======================
+**Exercise 4: Answer the following questions:**
+
+1) The two pandemic sequences are *A/California/04/2009* and *A/California/07/2009*. Are these sequences more closely related to each other than other sequences?
+
+2) Are the pandemic sequences most closely related to swine, human, or bird sequences?
+
+3) What is the date of the sequences to which the pandemic sequences are most closely related.
+
+4) Interpret these results in terms of the origins of the pandemic.
     
 If you're interested in learning more...
 ==========================================
 The exercises that you have just performed are a simpler version of the studies that scientists actually performed to understand the 2009 swine-origin H1N1 influenza pandemic.
 
-If you are interested, you can read about the similar but more complex analyses that scientists actually performed to study this virus outbreak by looking at `this paper <http://www.nature.com/nature/journal/v459/n7250/full/nature08182.html>`_ and `this website <http://tree.bio.ed.ac.uk/groups/influenza/>`_.
+If you are interested, you can read about the similar but more complex analyses that scientists actually performed to study this virus outbreak by looking at `this paper <http://www.nature.com/nature/journal/v459/n7250/full/nature08182.html>`_.
 
 
 

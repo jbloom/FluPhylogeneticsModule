@@ -204,7 +204,7 @@ number:       ...  271 272 273 274 275 276 277 278 279 280 ...
 </li>
 <li><p class="first">Enter the following list identifiers (separated by commas) in the empty white search box:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">FJ966082</span><span class="p">,</span> <span class="n">CY121680</span><span class="p">,</span> <span class="n">EU604689</span><span class="p">,</span> <span class="n">CY022477</span><span class="p">,</span> <span class="n">CY022333</span><span class="p">,</span> <span class="n">CY036799</span><span class="p">,</span>
-<span class="n">CY026283</span><span class="p">,</span> <span class="n">FJ986620</span><span class="p">,</span> <span class="n">CY021725</span><span class="p">,</span> <span class="n">AB671289</span><span class="p">,</span> <span class="n">CY014968</span><span class="p">,</span> <span class="n">EU735802</span>
+<span class="n">CY026283</span><span class="p">,</span> <span class="n">CY021725</span><span class="p">,</span> <span class="n">AB671289</span><span class="p">,</span> <span class="n">CY014968</span><span class="p">,</span> <span class="n">EU735802</span>
 </pre></div>
 </div>
 </li>
@@ -218,7 +218,7 @@ number:       ...  271 272 273 274 275 276 277 278 279 280 ...
 </ol>
 <a class="reference internal image-reference" href="_images/SequenceSet.png"><img alt="_images/SequenceSet.png" class="align-right" src="_images/SequenceSet.png" style="width: 90%;" /></a>
 <ol class="arabic simple" start="2">
-<li>Click on <tt class="docutils literal"><span class="pre">Select</span> <span class="pre">all</span> <span class="pre">12</span> <span class="pre">segments</span></tt>, and then click <tt class="docutils literal"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Working</span> <span class="pre">Set</span></tt> and save them as <tt class="docutils literal"><span class="pre">flu</span> <span class="pre">sequences</span></tt>. You have now saved the sequences on your workbench.</li>
+<li>Click on <tt class="docutils literal"><span class="pre">Select</span> <span class="pre">all</span> <span class="pre">11</span> <span class="pre">segments</span></tt>, and then click <tt class="docutils literal"><span class="pre">Add</span> <span class="pre">to</span> <span class="pre">Working</span> <span class="pre">Set</span></tt> and save them as <em>flu sequences</em>. You have now saved the sequences on your workbench.</li>
 </ol>
 
 </article>
@@ -227,7 +227,7 @@ number:       ...  271 272 273 274 275 276 277 278 279 280 ...
 <ol class="arabic">
 <li><p class="first">Click on the <tt class="docutils literal"><span class="pre">Workbench</span></tt> button at the top of the <a class="reference external" href="http://www.fludb.org/">Influenza Research Database</a>.</p>
 </li>
-<li><p class="first">On the list of analyses, click on <tt class="docutils literal"><span class="pre">View</span></tt> next to the <tt class="docutils literal"><span class="pre">flu</span> <span class="pre">sequences</span></tt> sequence set that you saved.</p>
+<li><p class="first">On the list of analyses, click on <tt class="docutils literal"><span class="pre">View</span></tt> next to the <em>flu sequences</em> sequence set that you saved.</p>
 </li>
 <li><p class="first">Look at the names. Flu sequences from humans are named like this:</p>
 <div class="highlight-python"><div class="highlight"><pre>A/Location/Number/Date (such as A/California/04/2009)
@@ -241,38 +241,60 @@ number:       ...  271 272 273 274 275 276 277 278 279 280 ...
 </ol>
 
 </article>
-<article class="slide level-2" id="id16">
-<h2>Examining your sequence set</h2>
+<article class="slide level-2" id="examine-your-sequence-set">
+<h2>Examine your sequence set</h2>
 <p>We will now look at the composition of the sequence set that you have saved.</p>
 <p><strong>Exercise 2: How many of the sequences come from humans? How many from pigs? How many from birds? What is the date of the earliest sequence?</strong></p>
 
 </article>
-<article class="slide level-2" id="building-a-phylogenetic-tree">
-<h2>Building a phylogenetic tree</h2>
+<article class="slide level-2" id="download-your-sequences">
+<h2>Download your sequences</h2>
+<p>Click to <tt class="docutils literal"><span class="pre">Select</span> <span class="pre">all</span> <span class="pre">11</span> <span class="pre">segments</span></tt>. Then click on the <tt class="docutils literal"><span class="pre">Download</span></tt> button near the top of the page to download the sequence set. Select the <tt class="docutils literal"><span class="pre">Gene</span> <span class="pre">FASTA</span></tt> format. Then click on the option to custom format the the <tt class="docutils literal"><span class="pre">Definition</span> <span class="pre">Line</span></tt> and add <strong>only</strong> <em>Strain Name</em> (this ensure the sequences are named by strain). Then click <tt class="docutils literal"><span class="pre">Download</span></tt> and save the file <tt class="docutils literal"><span class="pre">GeneFastaResults.fasta</span></tt>.</p>
+<p>This downloaded file has all of the sequences along with the strain name in <a class="reference external" href="http://en.wikipedia.org/wiki/FASTA_format">FASTA format</a>.</p>
+<p><strong>Shortcut:</strong> If you have problems with these steps, you can Download the file by <a class="reference download internal" href="_downloads/GeneFastaResults.fasta"><tt class="xref download docutils literal"><span class="pre">clicking</span> <span class="pre">here</span></tt></a>.</p>
+
+</article>
+<article class="slide level-2" id="hypothesize-about-the-phylogenetic-tree">
+<h2>Hypothesize about the phylogenetic tree</h2>
 <p>In your sequence set, there are two sequences from the 2009 outbreak in California. These sequences are <tt class="docutils literal"><span class="pre">A/California/04/2009</span></tt> and <tt class="docutils literal"><span class="pre">A/California/07/2009</span></tt>.</p>
 <p>The rest of the sequences are from pigs, from birds, or from another earlier strain of flu that was already infecting humans.</p>
 <p><strong>Exercise 3: Based on the news articles we discussed earlier, make a hypothesis about the phylogenetic tree. To which sequence(s) do you think the 2009 sequences from California will be most closely related?</strong></p>
 
 </article>
-<article class="slide level-2" id="id17">
-<h2>Building a phylogenetic tree</h2>
+<article class="slide level-2" id="build-the-phylogenetic-tree">
+<h2>Build the phylogenetic tree</h2>
 <ol class="arabic simple">
-<li>To actually build the phylogenetic tree, click on the <tt class="docutils literal"><span class="pre">Select</span> <span class="pre">all</span> <span class="pre">12</span> <span class="pre">segments</span></tt> box after viewing the sequence set on your <tt class="docutils literal"><span class="pre">Workbench</span></tt>.</li>
-<li>Click the <tt class="docutils literal"><span class="pre">Run</span> <span class="pre">Analysis</span></tt> button at the bottom right of the page, and select <tt class="docutils literal"><span class="pre">Generate</span> <span class="pre">Phylogenetic</span> <span class="pre">Tree</span></tt>. When asked for the sequence type, click <tt class="docutils literal"><span class="pre">Nucleic</span> <span class="pre">Acid</span> <span class="pre">(NA)</span></tt>.</li>
-<li>Specify an <tt class="docutils literal"><span class="pre">Analysis</span> <span class="pre">Name</span></tt> of <tt class="docutils literal"><span class="pre">mytree</span></tt> and then click the <tt class="docutils literal"><span class="pre">Build</span> <span class="pre">Tree</span></tt> button at the bottom of the page to build the tree with the default options.</li>
+<li>Go to the <a class="reference external" href="http://www.ebi.ac.uk/Tools/msa/clustalw2/">ClustalW webpage</a>.</li>
+<li>At <tt class="docutils literal"><span class="pre">STEP</span> <span class="pre">1</span></tt>, click the option that says <tt class="docutils literal"><span class="pre">Choose</span> <span class="pre">File</span></tt> and upload the sequence set <tt class="docutils literal"><span class="pre">GeneFastaResults.fasta</span></tt> that you downloaded from the <a class="reference external" href="http://www.fludb.org/">Influenza Research Database</a>.</li>
+<li>We are using gene sequences, so where it says <tt class="docutils literal"><span class="pre">a</span> <span class="pre">set</span> <span class="pre">of</span> <span class="pre">Protein</span> <span class="pre">sequences</span></tt> change <tt class="docutils literal"><span class="pre">Protein</span></tt> to <tt class="docutils literal"><span class="pre">DNA</span></tt>.</li>
+<li>Then click the <tt class="docutils literal"><span class="pre">Submit</span></tt> button at the bottom of the page. Wait for the analysis to finish. You may have to hit <tt class="docutils literal"><span class="pre">Reload</span></tt> on your web browser after waiting a few minutes.</li>
 </ol>
 
 </article>
-<article class="slide level-2" id="examining-your-phylogenetic-tree">
-<h2>Examining your phylogenetic tree</h2>
-<p>To look at your phylogenetic tree, click the <tt class="docutils literal"><span class="pre">View</span> <span class="pre">Tree</span></tt> button at the bottom of the page.</p>
-<p><strong>Note: This is where I ran into problems. I could not manage to get the tree visualization working with my web browsers. Do you have suggestions of a better way to visualize the tree?</strong></p>
+<article class="slide level-2" id="visualizing-your-tree">
+<h2>Visualizing your tree</h2>
+<ol class="arabic simple">
+<li>Once you get the results page, click the option for <tt class="docutils literal"><span class="pre">Phylogenetic</span> <span class="pre">Tree</span></tt> at the top of the page.</li>
+<li>Scroll to the bottom of the page to look at the tree.</li>
+<li>After looking at this tree, answer the questions on the next page.</li>
+</ol>
+
+</article>
+<article class="slide level-2" id="examining-the-tree">
+<h2>Examining the tree</h2>
+<p><strong>Exercise 4: Answer the following questions:</strong></p>
+<ol class="arabic simple">
+<li>The two pandemic sequences are <em>A/California/04/2009</em> and <em>A/California/07/2009</em>. Are these sequences more closely related to each other than other sequences?</li>
+<li>Are the pandemic sequences most closely related to swine, human, or bird sequences?</li>
+<li>What is the date of the sequences to which the pandemic sequences are most closely related.</li>
+<li>Interpret these results in terms of the origins of the pandemic.</li>
+</ol>
 
 </article>
 <article class="slide level-2" id="if-you-re-interested-in-learning-more">
 <h2>If you're interested in learning more...</h2>
 <p>The exercises that you have just performed are a simpler version of the studies that scientists actually performed to understand the 2009 swine-origin H1N1 influenza pandemic.</p>
-<p>If you are interested, you can read about the similar but more complex analyses that scientists actually performed to study this virus outbreak by looking at <a class="reference external" href="http://www.nature.com/nature/journal/v459/n7250/full/nature08182.html">this paper</a> and <a class="reference external" href="http://tree.bio.ed.ac.uk/groups/influenza/">this website</a>.</p>
+<p>If you are interested, you can read about the similar but more complex analyses that scientists actually performed to study this virus outbreak by looking at <a class="reference external" href="http://www.nature.com/nature/journal/v459/n7250/full/nature08182.html">this paper</a>.</p>
 
 </article>
 
