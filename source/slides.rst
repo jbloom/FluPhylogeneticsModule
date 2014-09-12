@@ -70,7 +70,7 @@ You will use techniques from `computational biology <http://en.wikipedia.org/wik
 Is the virus resistant to Tamiflu?
 =========================================================
 
-One of the first questions scientists asked was whether the virus was resistant to `Tamiflu (also known by the chemical name oseltamivir) <http://en.wikipedia.org/wiki/Oseltamivir>`_, which is the most commonly used drug against influenza.
+One of the first questions scientists wanted to know: was the virus was resistant to `Tamiflu (also known by the chemical name oseltamivir) <http://en.wikipedia.org/wiki/Oseltamivir>`_ (which is the most commonly used drug against influenza)?
 
 .. image:: images/Tamiflu.JPG
 
@@ -168,7 +168,7 @@ Assemble a set of virus sequences
 
 Saving your sequence set
 =================================
-1) You should now have a set of sequences that like this:
+1) You should now have a set of sequences like this:
 
 .. image:: images/SequenceSet.png
    :align: right
